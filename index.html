@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Meme Generator</title>
-  
+  <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,15 +18,15 @@
       </div>
     </div>  
     <div>
-      <h3><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i>Source Image</h3>
+      <h3><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i>Chọn Hình</h3>
       <div class="box">
         <div>
-          <p>From URL</p>
-          <input id="imgURL" class="block" type="text" placeholder="Link to image" />
+          <p>Link URL</p>
+          <input id="imgURL" class="block" type="text" placeholder="Link Hình Ảnh" />
           <a href="http://memeful.com/" target="_blank">Memeful.com</a>
         </div>
         <div>
-          <p>From Local Disk</p>
+          <p>Ảnh Trong Máy</p>
           <input id="imgFile" type="file" accept="image/*"/>
           <label for="imgFile" class="btn"><i class="fa fa-upload fa-fw"></i></label>
         </div>
@@ -34,28 +34,28 @@
 
 
 
-      <h3><i class="fa fa-commenting-o fa-fw" aria-hidden="true"></i>Meme Text</h3>
+      <h3><i class="fa fa-commenting-o fa-fw" aria-hidden="true"></i>Tạo Meme</h3>
       <div class="box">
         <div>
-          <p>Top Text</p>
-          <input id="textTop" type="text" class="block" placeholder="Top text" />
+          <p>Chữ Trên</p>
+          <input id="textTop" type="text" class="block" placeholder="Chữ Trên" />
         </div>
         <div>
-          <p>Bottom Text</p>
-          <input id="textBottom" type="text" class="block" placeholder="Bottom text" />
+          <p>Chữ Dưới</p>
+          <input id="textBottom" type="text" class="block" placeholder="Chữ Dưới" />
         </div>
       </div>
 
 
 
-      <h3><i class="fa fa-text-height fa-fw" aria-hidden="true"></i>Text Size</h3>
+      <h3><i class="fa fa-text-height fa-fw" aria-hidden="true"></i>Cỡ Chữ</h3>
       <div class="box">
         <div>
-          <p>Top Text: <span id="textSizeTopOut">10</span></p>
+          <p>Chữ Trên: <span id="textSizeTopOut">10</span></p>
           <input id="textSizeTop" type="range" min="2" max="50" step="2" />
         </div>
         <div>
-          <p>Bottom Text: <span id="textSizeBottomOut">10</span></p>
+          <p>Chữ Dưới: <span id="textSizeBottomOut">10</span></p>
           <input id="textSizeBottom" type="range" min="2" max="50" step="2" />
         </div>
       </div>
@@ -64,7 +64,7 @@
 
       <div class="box">
         <div>
-          <h3><i class="fa fa-eye fa-fw" aria-hidden="true"></i>Preview Size</h3>
+          <h3><i class="fa fa-eye fa-fw" aria-hidden="true"></i>Kích Thước Xem</h3>
           <input id="trueSize" type="checkbox"/>
           <label for="trueSize"><span>Show true size</span></label>
         </div>
@@ -72,10 +72,9 @@
 
 
         <div>
-          <h3><i class="fa fa-download fa-fw" aria-hidden="true"></i>Export</h3>
-          <p>If the button doesn't work, right-click the image and save it</p>
-          <p>If you are one mobile, download the source image and directly upload it</p>
-          <button id="export">Export!</button>
+          <h3><i class="fa fa-download fa-fw" aria-hidden="true"></i>Lưu Ảnh</h3>
+          
+          <button id="export">Lưu!</button>
         </div>
 
       </div>
@@ -83,6 +82,7 @@
 
     </div>
   </div>
+
 
 </body>
 <script src="jquery.js"></script>
